@@ -857,10 +857,9 @@ section,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
   background-size: cover;
   z-index: 0;
-  border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
 }
 
@@ -871,7 +870,7 @@ section,
   top: 0;
   width: 130%;
   height: 96%;
-  background: var(--background-color);
+  /* background: var(--background-color); */
   opacity: 0.3;
   z-index: 0;
   border-radius: 0 0 50% 50%;
