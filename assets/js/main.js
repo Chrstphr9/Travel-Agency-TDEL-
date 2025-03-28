@@ -34,43 +34,36 @@
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
-  /**
+   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
+   document.querySelectorAll('#navmenu a').forEach(navmenu => {
+    navmenu.addEventListener('click', (e) => {
+      // Check if the clicked link is inside a dropdown
+      const isDropdownLink = navmenu.closest('.dropdown');
+      
+      if (document.querySelector('.mobile-nav-active') && !isDropdownLink) {
         mobileNavToogle();
       }
     });
-
   });
 
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.dropdown > a').forEach(menu => {
-    menu.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevents navigation
-        let parentItem = this.closest("li"); 
-        parentItem.classList.toggle("active");
+  document.querySelectorAll('.navmenu .dropdown > a').forEach(navmenuLink => {
+    navmenuLink.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default link behavior
+      e.stopPropagation(); // Stop event from propagating to parent elements
 
-        let dropdownMenu = parentItem.querySelector("ul");
-        if (dropdownMenu) {
-            dropdownMenu.classList.toggle("dropdown-active");
-        }
-
-        e.stopPropagation(); // Prevents event bubbling
+      // Toggle active classes specifically for this dropdown
+      const parentDropdown = this.closest('.dropdown');
+      parentDropdown.classList.toggle('active');
+      
+      const dropdownList = parentDropdown.querySelector('ul');
+      dropdownList.classList.toggle('dropdown-active');
     });
-});
-
-// Stop clicks inside the dropdown from closing it
-document.querySelectorAll('.dropdown ul').forEach(dropdown => {
-    dropdown.addEventListener('click', function (e) {
-        e.stopPropagation(); // Prevents menu from closing when clicking inside
-    });
-});
-
+  });
 
   /**
    * Preloader
