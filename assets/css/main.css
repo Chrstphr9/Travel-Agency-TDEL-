@@ -1039,8 +1039,8 @@ section,
 
 .featured-services .service-item .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  width: 120px;
+  height: 120px;
   display: flex;
   border-radius: 50%;
   align-items: center;
@@ -1071,7 +1071,7 @@ section,
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.featured-services .service-item.item-cyan .icon {
+/* .featured-services .service-item.item-cyan .icon {
   background-color: color-mix(in srgb, var(--cyan-color) 10%, white 95%);
 }
 
@@ -1149,7 +1149,7 @@ section,
 
 .featured-services .service-item.item-red:hover .icon i {
   color: var(--contrast-color);
-}
+} */
 
 /*--------------------------------------------------------------
 # About Section

@@ -49,14 +49,28 @@
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
+  document.querySelectorAll('.dropdown > a').forEach(menu => {
+    menu.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevents navigation
+        let parentItem = this.closest("li"); 
+        parentItem.classList.toggle("active");
+
+        let dropdownMenu = parentItem.querySelector("ul");
+        if (dropdownMenu) {
+            dropdownMenu.classList.toggle("dropdown-active");
+        }
+
+        e.stopPropagation(); // Prevents event bubbling
     });
-  });
+});
+
+// Stop clicks inside the dropdown from closing it
+document.querySelectorAll('.dropdown ul').forEach(dropdown => {
+    dropdown.addEventListener('click', function (e) {
+        e.stopPropagation(); // Prevents menu from closing when clicking inside
+    });
+});
+
 
   /**
    * Preloader
