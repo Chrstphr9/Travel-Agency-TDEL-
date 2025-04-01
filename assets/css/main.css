@@ -380,6 +380,12 @@ h6 {
     z-index: 9997;
   }
 
+  .navmenu .dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 114px; /* Adjust this value to reduce/increase space */
+  }
+
   .navmenu ul {
     display: none;
     list-style: none;
@@ -488,6 +494,16 @@ h6 {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+  .navmenu .dropdown > a {
+    position: relative; /* Required for absolute child */
+    padding-right: 40px; /* Make space for icon */
+  }
+  
+  .navmenu .dropdown .bi-chevron-down {
+    position: absolute;
+    right: 260px; /* Adjust this value */
+    margin: 0; /* Reset any margins */
   }
 }
 
@@ -857,7 +873,7 @@ section,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/air.jpg") center top no-repeat;
   background-size: cover;
   z-index: 0;
   transform: translateX(-50%) rotate(0deg);
