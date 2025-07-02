@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Diplomat Travels Bootstrap Template</title>
+  <title>Services - Diplomat Travels Website</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- Favicons -->
   <link href="assets/img/22_letter_d.jpg" rel="icon">
@@ -20,6 +21,14 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+    <!-- Libraries CSS Files -->
+  <!-- <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -29,14 +38,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Diplomat Travels
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-Diplomat Travels/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -77,126 +80,83 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in"> -->
-
-      <div id="hero-carousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="container position-relative">
-
-          <div class="carousel-item active">
-            <div class="carousel-container">
-              <h2>Welcome to the Diplomats Travels</h2>
-              <p>Traveling somewhere?
-                Travel with the Diplomats</p>
-              <a href="#about" class="btn-get-started">Read More</a>
-            </div>
-          </div><!-- End Carousel Item -->
-
-          <div class="carousel-item">
-            <div class="carousel-container">
-              <h2>Explore the World with Ease</h2>
-              <p>At Diplomats Travel, we make traveling seamless, exciting, and stress-free. Whether you’re planning a
-                vacation, business trip, visa processing,
-                or flight & hotel reservations, our expert team is here to handle all the details.</p>
-              <a href="#about" class="btn-get-started">Read More</a>
-            </div>
-          </div><!-- End Carousel Item -->
-
-          <div class="carousel-item">
-            <div class="carousel-container">
-              <h2>Your Journey, Our Priority</h2>
-              <p>At Diplomats Travel, we specialize in making travel hassle-free and unforgettable. From flight
-                bookings and visa assistance to hotel reservations and vacation planning, we ensure a smooth and
-                enjoyable experience for every traveler.</p>
-              <a href="#about" class="btn-get-started">Read More</a>
-            </div>
-          </div><!-- End Carousel Item -->
-
-          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-
-          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
-
-          <ol class="carousel-indicators"></ol>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Featured Services Section -->
-    <!-- <section id="featured-services" class="featured-services section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <img src="assets/img/ticketing-reservation.jpg" class="img-fluid" alt="">
-
+  <div class="intro intro-carousel">
+    <div id="carousel" class="owl-carousel owl-theme">
+    <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-1.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <!-- <p class="intro-title-top">
+                      Doral, Florida
+                      <br> 78345</p> -->
+                    <h1 class="intro-title mb-4">
+                      The <span class="color-b">Diplomats </span>
+                      <br> Travels
+                    </h1>
+                    <p class="intro-subtitle intro-price">
+                      Traveling somewhere? Travel with the Diplomats
+                    </p>
+                  </div>
+                </div>
               </div>
-      
-              <h3>Visa Processing</h3>
-              </a>
-              <p>Hassle-free visa processing made easy! We handle the paperwork so you can focus on your travel plans.
-                Let us simplify your journey with expert guidance and smooth approvals.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-        
-              <h3>College Finding</h3>
-              </a>
-              <p> Study abroad made easy! We help you find the perfect college, handle applications, and guide you
-                through the process. Start your journey to a brighter future with us!</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-calendar-days"></i>
-              </div>
-             
-              <h3>Flight Reservation</h3>
-              </a>
-              <p>Easy and affordable flight reservations! We find the best deals and smoothest routes to get you to your
-                destination hassle-free. Book your journey with us today!</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <img src="assets/img/hotel-reservation.jpg" class="img-fluid" alt="">
-
-              </div>
-            
-              <h3>Vacation Packages</h3>
-              </a>
-              <p>Perfect vacation packages tailored for you! From exotic getaways to relaxing retreats, we handle
-                everything for a stress-free trip. Book your dream vacation today!</p>
-           
             </div>
           </div>
         </div>
-
       </div>
-
-    </section>/Featured Services Section -->
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-2.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <!-- <p class="intro-title-top">Doral, Florida
+                      <br> 78345</p> -->
+                    <h1 class="intro-title mb-4">
+                      The <span class="color-b">Diplomats </span>
+                      <br> Travels
+                    </h1>
+                    <p class="intro-subtitle intro-price">
+                      Traveling somewhere? Travel with the Diplomats
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-3.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    
+                    <h1 class="intro-title mb-4">
+                      The <span class="color-b">Diplomats </span>
+                      <br> Travels
+                    </h1>
+                    
+                    <p class="intro-subtitle intro-price">
+                      Traveling somewhere? Travel with the Diplomats
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- About Section -->
     <section id="about" class="about section light-background">
@@ -430,8 +390,19 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/home.js"></script>
+<!-- jQuery (must be loaded first) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 
