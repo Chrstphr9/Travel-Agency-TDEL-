@@ -410,73 +410,79 @@
 
 
 
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+                  <input type="hidden" name="access_key" value="33794fce-ed73-497c-ac56-f4567a9abd6d">
+                
                   <!-- Personal Information -->
                   <div class="row g-3">
                     <div class="col-md-4">
                       <label for="firstName" class="form-label">First Name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                      <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Enter First Name" required>
                     </div>
-
+                
                     <div class="col-md-4">
                       <label for="middleName" class="form-label">Middle Name</label>
-                      <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                      <input type="text" class="form-control" id="middleName" name="middle_name" placeholder="Enter Middle Name">
                     </div>
-
+                
                     <div class="col-md-4">
                       <label for="lastName" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+                      <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Enter Last Name" required>
                     </div>
                   </div>
-
+                
                   <!-- Contact Information -->
                   <div class="row g-3 mt-3">
                     <div class="col-md-6">
                       <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
                     </div>
-
+                
                     <div class="col-md-6">
                       <label for="mobile" class="form-label">Mobile Number</label>
-                      <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number" required>
+                      <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
                     </div>
                   </div>
-
-                  <!-- Payment Information -->
+                
+                  <!-- Payment Info -->
                   <div class="mt-4">
-                    <p class="fw-bold">Send payment details to our official WhatsApp: <a
-                        href="https://wa.me/2347081843000" target="_blank" class="text-primary">07081843000</a></p>
+                    <p class="fw-bold">
+                      Send payment details to our official WhatsApp:
+                      <a href="https://wa.me/2347081843000" target="_blank" class="text-primary">07081843000</a>
+                    </p>
                   </div>
-
-                  <!-- Document Upload -->
+                
+                  <!-- File Upload -->
                   <div class="mt-3">
                     <label class="form-label">Upload the front page Bio Data of your International Passport</label>
-                    <input type="file" class="form-control">
+                    <input type="file" class="form-control" name="passport_bio_data">
                   </div>
-
-                  <!-- Travel Information -->
+                
+                  <!-- Travel Info -->
                   <div class="mt-4">
                     <label class="form-label">Are you traveling with someone?</label>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="travelWithSomeone" id="yesTravel" value="Yes">
+                      <input class="form-check-input" type="radio" name="travel_with_someone" id="yesTravel" value="Yes">
                       <label class="form-check-label" for="yesTravel">Yes</label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="travelWithSomeone" id="noTravel" value="No">
+                      <input class="form-check-input" type="radio" name="travel_with_someone" id="noTravel" value="No">
                       <label class="form-check-label" for="noTravel">No</label>
                     </div>
                   </div>
-
+                
                   <div class="mt-3">
                     <label for="numTravelers" class="form-label">If yes, how many?</label>
-                    <input type="number" class="form-control" id="numTravelers" min="1" placeholder="Specify Number">
+                    <input type="number" class="form-control" id="numTravelers" name="number_of_travelers" min="1" placeholder="Specify Number">
                   </div>
-
-                  <!-- Submit Button -->
+                
+                  <!-- Submit -->
                   <div class="d-grid mt-4">
                     <button type="submit" class="btn btn-primary">Submit Application</button>
                   </div>
                 </form>
+                
+                
               </div>
             </div>
 
