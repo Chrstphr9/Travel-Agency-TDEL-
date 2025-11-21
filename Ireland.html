@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Diplomat travels Website</title>
+  <title>Service Details - The Diplomat Travels Website</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -24,9 +24,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .form-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+    }
+    
+    .section-title {
+        border-bottom: 2px solid #0d6efd;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -35,7 +49,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Diplomat travels</h1>
+        <h1 class="sitename">The Diplomat Travels</h1>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -80,19 +94,15 @@
     <!-- ======= Service Details Section ======= -->
     <section id="service-details" class="service-details section">
       <div class="container">
-        <div class="row gy-5">
-
-         
-
-          <!-- Right Column: FAQ Section -->
-          <div class="col-lg-6 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- FAQ Section - Moved to top -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up">
             <div class="card shadow-lg">
               <div class="card-body">
-                <img src="assets/img/flight.jpg" alt="Canada Visa Service" class="img-fluid rounded mb-4">
-                <h3 class="mb-2">Visa Processing Assistance</h3>
                 <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-
                 <div class="accordion" id="faqAccordion">
+                  
                   <!-- FAQ Item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="faq1">
@@ -127,20 +137,12 @@
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <ul class="list-group">
-                          <li class="list-group-item">
-                            ₦499,000 (Adult)
-                            ₦299,000 (Child)
-
-                            Embassy Service charge: ₦125,000 (payable before picking biometrics date)
-
-                            Visa Fee (payable to the Embassy):
-
-                            Transit: £25
-
-                            Single Entry: £60
-
-                            Multiple Entry: £100
-                          </li>
+                          <li class="list-group-item">Processing fee: ₦499,000 (Adult), ₦299,000 (Child)</li>
+                          <li class="list-group-item">Embassy Service charge: ₦125,000 (payable before picking biometrics date)</li>
+                          <li class="list-group-item">Visa Fee (payable to the Embassy):</li>
+                          <li class="list-group-item">Transit: £25</li>
+                          <li class="list-group-item">Single Entry: £60</li>
+                          <li class="list-group-item">Multiple Entry: £100</li>
                         </ul>
                       </div>
                     </div>
@@ -157,7 +159,7 @@
                     <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>3. How long does the processing take?</p>
+                        <p>Processing time varies depending on the embassy's workload. We will provide current estimated timelines during your application process.</p>
                       </div>
                     </div>
                   </div>
@@ -167,13 +169,13 @@
                     <h2 class="accordion-header" id="faq4">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                        4.What if I am not working, can I still apply?
+                        4. What if I am not working, can I still apply?
                       </button>
                     </h2>
                     <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>Yes, you can, provided you have a sponsor</p>
+                        <p>Yes, you can, provided you have a sponsor.</p>
                       </div>
                     </div>
                   </div>
@@ -189,7 +191,7 @@
                     <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>Yes, an invitation could be an advantage</p>
+                        <p>Yes, an invitation could be an advantage.</p>
                       </div>
                     </div>
                   </div>
@@ -205,7 +207,7 @@
                     <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>Yes, we will</p>
+                        <p>Yes, we will.</p>
                       </div>
                     </div>
                   </div>
@@ -222,7 +224,7 @@
                     <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>No, you do not need to make an appointment for the submission of the documents</p>
+                        <p>No, you do not need to make an appointment for the submission of the documents.</p>
                       </div>
                     </div>
                   </div>
@@ -240,7 +242,7 @@
                       <div class="accordion-body">
                         <p>To submit the documents at the Visa application Abuja/Lagos, applicants can pay the visa
                           application fee and services fee at the bank teller counter at the Visa Application Centre,
-                          Abuja/Lagos</p>
+                          Abuja/Lagos.</p>
                       </div>
                     </div>
                   </div>
@@ -257,121 +259,165 @@
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>The Embassy of Ireland holds a right to call the applicant for a personal interview. In such
-                          cases, the applicant will be directly contacted by the Embassy</p>
+                          cases, the applicant will be directly contacted by the Embassy.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
-
           </div>
+        </div>
 
-           <!-- Left Column: Visit Visa Application Form -->
-           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <!-- Visit Visa Application Process - Moved to second position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
             <div class="card shadow-lg">
               <div class="card-body">
                 <h3 class="card-title text-center mb-4">Visit Visa Application Process</h3>
-
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+                  <input type="hidden" name="access_key" value="33794fce-ed73-497c-ac56-f4567a9abd6d">
+                
                   <!-- Personal Information -->
                   <div class="row g-3">
                     <div class="col-md-4">
                       <label for="firstName" class="form-label">First Name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                      <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Enter First Name" required>
                     </div>
-
+                
                     <div class="col-md-4">
                       <label for="middleName" class="form-label">Middle Name</label>
-                      <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                      <input type="text" class="form-control" id="middleName" name="middle_name" placeholder="Enter Middle Name">
                     </div>
-
+                
                     <div class="col-md-4">
                       <label for="lastName" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+                      <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Enter Last Name" required>
                     </div>
                   </div>
-
+                
                   <!-- Contact Information -->
                   <div class="row g-3 mt-3">
                     <div class="col-md-6">
                       <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
                     </div>
-
+                
                     <div class="col-md-6">
                       <label for="mobile" class="form-label">Mobile Number</label>
-                      <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number" required>
+                      <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
                     </div>
                   </div>
-
-                  <!-- Payment Information -->
+                
+                  <!-- Payment Info -->
                   <div class="mt-4">
-                    <p class="fw-bold">Send payment details to our official WhatsApp: <a
-                        href="https://wa.me/2347081843000" target="_blank" class="text-primary">07081843000</a></p>
+                    <p class="fw-bold">
+                      Send payment details to our official WhatsApp:
+                      <a href="https://wa.me/2347081843000" target="_blank" class="text-primary">07081843000</a>
+                    </p>
                   </div>
-
-                  <!-- Document Upload -->
+                
+                  <!-- File Upload -->
                   <div class="mt-3">
                     <label class="form-label">Upload the front page Bio Data of your International Passport</label>
-                    <input type="file" class="form-control">
+                    <input type="file" class="form-control" name="passport_bio_data">
                   </div>
-
-                  <!-- travels Information -->
+                
+                  <!-- travels Info -->
                   <div class="mt-4">
                     <label class="form-label">Are you travelsing with someone?</label>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="travelsWithSomeone" id="yestravels" value="Yes">
+                      <input class="form-check-input" type="radio" name="travels_with_someone" id="yestravels" value="Yes">
                       <label class="form-check-label" for="yestravels">Yes</label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="travelsWithSomeone" id="notravels" value="No">
+                      <input class="form-check-input" type="radio" name="travels_with_someone" id="notravels" value="No">
                       <label class="form-check-label" for="notravels">No</label>
                     </div>
                   </div>
-
+                
                   <div class="mt-3">
                     <label for="numtravelsers" class="form-label">If yes, how many?</label>
-                    <input type="number" class="form-control" id="numtravelsers" min="1" placeholder="Specify Number">
+                    <input type="number" class="form-control" id="numtravelsers" name="number_of_travelsers" min="1" placeholder="Specify Number">
                   </div>
-
-                  <!-- Submit Button -->
+                
+                  <!-- Submit -->
                   <div class="d-grid mt-4">
                     <button type="submit" class="btn btn-primary">Submit Application</button>
                   </div>
                 </form>
               </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Contact Form -->
-            <div class="card shadow-lg mt-5">
+        <!-- Payment Information Section - Kept in original position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="card shadow-lg border-0">
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Start Your Visa Process Now</h3>
+                <p class="lead">If your questions are all answered, proceed with your application.</p>
+
+                <hr>
+
+                <h5 class="fw-bold text-danger">You are required to pay the processing fee first</h5>
+                <div class="mt-3">
+                  <p class="fs-5"><strong>N499,000</strong> (Adult)</p>
+                  <p class="fs-5"><strong>N299,000</strong> (Child)</p>
+                </div>
+
+                <p class="text-muted">The visa fee can be paid when submitting the application.</p>
+                <p class="text-success fw-bold">We will confirm the payment within 24 hours and get back to you.</p>
+
+                <div class="alert alert-info mt-4" role="alert">
+                  <h5 class="mb-1">Payment Details:</h5>
+                  <p class="mb-0"><strong>Account Number:</strong> 0899984222</p>
+                  <p class="mb-0"><strong>Bank:</strong> Guaranty Trust Bank</p>
+                  <p class="mb-0"><strong>Account Name:</strong> The Diplomats and Eminence Limited</p>
+                </div>
+
+                <p class="fw-bold mt-3">Or</p>
+
+                <div class="bg-light p-3 rounded">
+                  <a href="paystack.html" class="text-primary">Make payment with PAYSTACK</a>
+                  <p class="text-muted mb-0">Your payment will be automatically verified and redirected to fill the data
+                    form.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form - Moved to third position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-lg">
               <div class="card-body">
                 <h3 class="card-title text-center mb-3">Contact Us</h3>
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form action="forms/contact.php" method="post" class="php-email-form" id="contactForm">
                   <div class="row gy-3">
                     <div class="col-md-12">
-                      <label for="name" class="form-label">Your Name</label>
-                      <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
-                        required>
+                      <label for="contact_name" class="form-label">Your Name</label>
+                      <input type="text" id="contact_name" name="name" class="form-control"
+                        placeholder="Enter your name" required>
                     </div>
 
                     <div class="col-md-12">
-                      <label for="email" class="form-label">Your Email</label>
-                      <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
-                        required>
+                      <label for="contact_email" class="form-label">Your Email</label>
+                      <input type="email" id="contact_email" name="email" class="form-control"
+                        placeholder="Enter your email" required>
                     </div>
 
                     <div class="col-md-12">
-                      <label for="subject" class="form-label">Subject</label>
-                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject"
-                        required>
+                      <label for="contact_subject" class="form-label">Subject</label>
+                      <input type="text" id="contact_subject" name="subject" class="form-control"
+                        placeholder="Enter subject" required>
                     </div>
 
                     <div class="col-md-12">
-                      <label for="message" class="form-label">Message</label>
-                      <textarea id="message" name="message" class="form-control" rows="4"
+                      <label for="contact_message" class="form-label">Message</label>
+                      <textarea id="contact_message" name="message" class="form-control" rows="4"
                         placeholder="Write your message here" required></textarea>
                     </div>
 
@@ -380,42 +426,15 @@
                     </div>
                   </div>
                 </form>
+
+                <!-- Add this div for displaying form submission messages -->
+                <div id="form-message" class="mt-3 text-center"></div>
               </div>
             </div>
           </div>
-          
-          <div class="card shadow-lg border-0">
-            <div class="card-body text-center">
-              <h3 class="text-primary fw-bold">Start Your Visa Process Now</h3>
-              <p class="lead">If your questions are all answered, proceed with your application.</p>
+        </div>
 
-              <hr>
-
-              <h5 class="fw-bold text-danger">You are required to pay the processing fee first</h5>
-              <div class="mt-3">
-                <p class="fs-5"><strong>N499,000</strong> (Adult)</p>
-                <p class="fs-5"><strong>N299,000</strong> (Child)</p>
-              </div>
-
-              <p class="text-muted">The visa fee can be paid when submitting the application.</p>
-              <p class="text-success fw-bold">We will confirm the payment within 24 hours and get back to you.</p>
-
-              <div class="alert alert-info mt-4" role="alert">
-                <h5 class="mb-1">Payment Details:</h5>
-                <p class="mb-0"><strong>Account Number:</strong> 0899984222</p>
-                <p class="mb-0"><strong>Bank:</strong> Guaranty Trust Bank</p>
-                <p class="mb-0"><strong>Account Name:</strong> The Diplomats and Eminence Limited</p>
-              </div>
-
-              <p class="fw-bold mt-3">Or</p>
-
-              <div class="bg-light p-3 rounded">
-                <h5 class="text-primary">Make payment with PAYSTACK</h5>
-                <p class="text-muted mb-0">Your payment will be automatically verified and redirected to fill the data
-                  form.</p>
-              </div>
-            </div>
-          </div>
+      </div>
     </section>
     <!-- End Service Details Section -->
   </main>
@@ -433,7 +452,7 @@
             <p>3rd Gate Army Barrack, by Ebube Block Industry,</p>
             <p>Azhata, Abuja FCT</p>
             <p class="mt-3"><strong>Whatsapp:</strong> <span>+23470 8184 3000</span></p>
-            <p><strong>Email:</strong> <span>talktothediplomats@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>info@talktothediplomats.com.ng</span></p>
           </div>
         </div>
 
@@ -450,18 +469,18 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="./VP.html"></a>Visa Processing</li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./VP.html">Visa Processing</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="./CF.html">College Finding</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Flight Reservation</li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Hotel Reservation</li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Vacation Package</li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Flight Reservation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Hotel Reservation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Vacation Package</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
           <p>Your journey starts here! We specialize in unforgettable travels experiences, from dream getaways to thrilling adventures. Follow us for inspiration, 
-            tips, and exclusive deals. Let’s explore the world together!</p>
+            tips, and exclusive deals. Let's explore the world together!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -476,10 +495,6 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">The Diplomats and Eminence Limited</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">Somto</a>
       </div>
     </div>
@@ -497,5 +512,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

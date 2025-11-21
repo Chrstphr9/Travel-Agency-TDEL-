@@ -215,5 +215,140 @@
   text-transform: uppercase;
 }
 
+/*======================================
+//--//-->   VISA APPLICATION FORM
+======================================*/
 
+.visa-application-form {
+  background: linear-gradient(145deg, #f9fbff 0%, #eef2ff 100%);
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  border-radius: 1.75rem;
+  border: 1px solid #dfe7ff;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+  margin-top: 2rem;
+}
 
+.visa-application-form .row {
+  row-gap: 1rem;
+}
+
+.visa-application-form .form-section {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  border: 1px solid #e7ecff;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.04);
+}
+
+.visa-application-form .form-section::after {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  opacity: 0.35;
+}
+
+.visa-application-form .section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #0f172a;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.visa-application-form .section-title::before {
+  content: "";
+  width: 36px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  display: inline-block;
+}
+
+.visa-application-form .form-label {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.35rem;
+}
+
+.visa-application-form .form-control,
+.visa-application-form .form-select,
+.visa-application-form textarea {
+  border-radius: 0.85rem;
+  border: 1px solid #d5ddf6;
+  background-color: #f8faff;
+  color: #0f172a;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.visa-application-form .form-control:focus,
+.visa-application-form .form-select:focus,
+.visa-application-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.15);
+  background-color: #ffffff;
+}
+
+.visa-application-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.visa-application-form .form-check-input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #b5c3f3;
+  cursor: pointer;
+}
+
+.visa-application-form .form-check-input:checked {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 0.15rem rgba(79, 70, 229, 0.25);
+}
+
+.visa-application-form .form-check-label {
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+}
+
+.visa-application-form .btn-primary {
+  padding: 0.9rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4f46e5 0%, #22d3ee 100%);
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.visa-application-form .btn-primary:hover,
+.visa-application-form .btn-primary:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(34, 211, 238, 0.35);
+}
+
+@media (max-width: 767.98px) {
+  .visa-application-form {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+  }
+
+  .visa-application-form .form-section {
+    padding: 1.25rem;
+  }
+}

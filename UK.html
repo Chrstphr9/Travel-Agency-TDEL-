@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Diplomat travels Website</title>
+  <title>Service Details - The Diplomat Travels Website</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -24,9 +24,36 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .form-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+    }
+    
+    .section-title {
+        border-bottom: 2px solid #0d6efd;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .required-field::after {
+        content: " *";
+        color: red;
+    }
+    
+    .card-header.bg-primary {
+        background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%) !important;
+    }
+    
+    .form-check-input:checked {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -35,7 +62,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Diplomat travels</h1>
+        <h1 class="sitename">The Diplomat Travels</h1>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -80,19 +107,15 @@
     <!-- ======= Service Details Section ======= -->
     <section id="service-details" class="service-details section">
       <div class="container">
-        <div class="row gy-5">
-
-          
-
-          <!-- Right Column: FAQ Section -->
-          <div class="col-lg-6 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- FAQ Section - Moved to top -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up">
             <div class="card shadow-lg">
               <div class="card-body">
-                <img src="assets/img/flight.jpg" alt="Canada Visa Service" class="img-fluid rounded mb-4">
-                <h3 class="mb-2">Visa Processing Assistance</h3>
                 <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-
                 <div class="accordion" id="faqAccordion">
+                  
                   <!-- FAQ Item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="faq1">
@@ -143,7 +166,6 @@
                     </div>
                   </div>
 
-
                   <!-- FAQ Item 3 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="faq3">
@@ -155,7 +177,7 @@
                     <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>Visa processing fee covers filling of client’s
+                        <p>Visa processing fee covers filling of client's
                           application form, documentation review, and advisory services
                           based on our expertise</p>
                       </div>
@@ -164,30 +186,29 @@
 
                   <!-- FAQ Item 4 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq7">
+                    <h2 class="accordion-header" id="faq4">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                         4. How long does the processing take?
                       </button>
                     </h2>
-                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>
-                          It could take up to 30 working days or more after submission at the embassy</p>
+                        <p>It could take up to 30 working days or more after submission at the embassy</p>
                       </div>
                     </div>
                   </div>
 
                   <!-- FAQ Item 5 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq4">
+                    <h2 class="accordion-header" id="faq5">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                         5. What if I am not working, can I still apply?
                       </button>
                     </h2>
-                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Yes, you can, provided you have a sponsor</p>
@@ -197,13 +218,13 @@
 
                   <!-- FAQ Item 6 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq5">
+                    <h2 class="accordion-header" id="faq6">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
                         6. Will I go for an interview?
                       </button>
                     </h2>
-                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>No. But you will be doing biometrics at TLS centre in Abuja or Lagos.
@@ -215,13 +236,13 @@
 
                   <!-- FAQ Item 7 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq6">
+                    <h2 class="accordion-header" id="faq7">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
                         7. Is it necessary to get an invitation before I apply?
                       </button>
                     </h2>
-                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Yes, it's necessary</p>
@@ -231,13 +252,13 @@
 
                   <!-- FAQ Item 8 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq7">
+                    <h2 class="accordion-header" id="faq8">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
                         8. Will you review my documents before submitting?
                       </button>
                     </h2>
-                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Yes, we will</p>
@@ -247,13 +268,13 @@
 
                   <!-- FAQ Item 9 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq8">
+                    <h2 class="accordion-header" id="faq9">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
                         9. How much should be my closing balance?
                       </button>
                     </h2>
-                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8"
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Enough to cover your trip. Further guidance will be given to you during the process</p>
@@ -263,13 +284,13 @@
 
                   <!-- FAQ Item 10 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq9">
+                    <h2 class="accordion-header" id="faq10">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
                         10. I was just refused a visa. Can I reapply?
                       </button>
                     </h2>
-                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9"
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Yes, you can reapply</p>
@@ -279,29 +300,29 @@
 
                   <!-- FAQ Item 11 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq10">
+                    <h2 class="accordion-header" id="faq11">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                        11. If I’m not in Abuja, can I still apply through your company?
+                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        11. If I'm not in Abuja, can I still apply through your company?
                       </button>
                     </h2>
-                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10"
+                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>Yes, you can, we will guide you online, and via phone </p>
+                        <p>Yes, you can, we will guide you online, and via phone</p>
                       </div>
                     </div>
                   </div>
 
                   <!-- FAQ Item 12 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq11">
+                    <h2 class="accordion-header" id="faq12">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
                         12. Is your Visa guaranteed?
                       </button>
                     </h2>
-                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11"
+                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="faq12"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Visa issuance is at the discretion of the consular, however, based on our expertise, you
@@ -312,13 +333,13 @@
 
                   <!-- FAQ Item 13 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq12">
+                    <h2 class="accordion-header" id="faq13">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
                         13. What if I am refused a visa, will there be a refund?
                       </button>
                     </h2>
-                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="faq12"
+                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="faq13"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>No, but you can reapply without paying the processing fee again. (You only pay visa
@@ -329,13 +350,13 @@
 
                   <!-- FAQ Item 14 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq13">
+                    <h2 class="accordion-header" id="faq14">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
                         14. Does your company assist with work permits?
                       </button>
                     </h2>
-                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="faq13"
+                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="faq14"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>No</p>
@@ -365,6 +386,7 @@
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
                         16. Does your company process statements of accounts or work documents for clients?
+                      </button>
                     </h2>
                     <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="faq16"
                       data-bs-parent="#faqAccordion">
@@ -373,6 +395,7 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- FAQ Item 17 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="faq17">
@@ -386,50 +409,50 @@
                       <div class="accordion-body">
                         <p>3rd Gate Army Barrack Kurudu, by Ebube Block Industry Azhata, Abuja</p>
                       </div>
-
-
-                      <!-- Note: All 21 FAQ items would be included in the full implementation -->
                     </div>
                   </div>
+
                   <!-- FAQ Item 18 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq16">
+                    <h2 class="accordion-header" id="faq18">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
                         18. After getting my visa, can your company assist with accommodation/flight?
                       </button>
                     </h2>
-                    <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="faq16"
+                    <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="faq18"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>Yes, we can</p>
                       </div>
                     </div>
                   </div>
+
                   <!-- FAQ Item 19 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq16">
+                    <h2 class="accordion-header" id="faq19">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-                        19. 19. Do I need to have travels history before applying?
+                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                        19. Do I need to have travels history before applying?
                       </button>
                     </h2>
-                    <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="faq16"
+                    <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="faq19"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                        <p>No, you don’t need to have travels history</p>
+                        <p>No, you don't need to have travels history</p>
                       </div>
                     </div>
                   </div>
+
                   <!-- FAQ Item 20 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq16">
+                    <h2 class="accordion-header" id="faq20">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
                         20. What is the timeline for your Visa processing?
                       </button>
                     </h2>
-                    <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="faq16"
+                    <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="faq20"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>The Diplomats visa processing timeline takes a maximum of 3 weeks from the payment
@@ -437,15 +460,16 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- FAQ Item 21 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq16">
+                    <h2 class="accordion-header" id="faq21">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
                         21. Can I apply for a fast track?
                       </button>
                     </h2>
-                    <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="faq16"
+                    <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="faq21"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
                         <p>The Diplomats travels fast track cost an additional fee of ₦499,000 per application (5
@@ -459,13 +483,14 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Left Column: Visit Visa Application Form -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <!-- Visit Visa Application Process - Moved to second position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
             <div class="card shadow-lg">
               <div class="card-body">
                 <h3 class="card-title text-center mb-4">Visit Visa Application Process</h3>
-
                 <form>
                   <!-- Personal Information -->
                   <div class="row g-3">
@@ -498,19 +523,21 @@
                     </div>
                   </div>
 
-                  <!-- Payment Information -->
+                  <!-- Payment Info -->
                   <div class="mt-4">
-                    <p class="fw-bold">Send payment details to our official WhatsApp: <a
-                        href="https://wa.me/2347081843000" target="_blank" class="text-primary">07081843000</a></p>
+                    <p class="fw-bold">
+                      Send payment details to our official WhatsApp:
+                      <a href="https://wa.me/2347081843000" target="_blank" class="text-primary">07081843000</a>
+                    </p>
                   </div>
 
-                  <!-- Document Upload -->
+                  <!-- File Upload -->
                   <div class="mt-3">
                     <label class="form-label">Upload the front page Bio Data of your International Passport</label>
                     <input type="file" class="form-control">
                   </div>
 
-                  <!-- travels Information -->
+                  <!-- travels Info -->
                   <div class="mt-4">
                     <label class="form-label">Are you travelsing with someone?</label>
                     <div class="form-check">
@@ -528,36 +555,306 @@
                     <input type="number" class="form-control" id="numtravelsers" min="1" placeholder="Specify Number">
                   </div>
 
-                  <!-- Submit Button -->
+                  <!-- Submit -->
                   <div class="d-grid mt-4">
                     <button type="submit" class="btn btn-primary">Submit Application</button>
                   </div>
                 </form>
               </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Contact Form -->
-            <div class="card shadow-lg mt-5">
+        <!-- COMPREHENSIVE UK VISA FORM - ADDED BEFORE PAYMENT DETAILS -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="150">
+            <div class="card shadow">
+              <div class="card-header bg-primary text-white">
+                <h2 class="mb-0">UK Visa Application Form</h2>
+              </div>
+              <div class="card-body">
+                <p class="text-muted"><small>* Indicates required question</small></p>
+
+                <form>
+                  <!-- Email -->
+                  <div class="mb-4">
+                    <label for="email" class="form-label fw-bold">Email *</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+
+                  <h4 class="mt-5 mb-4">Personal Information</h4>
+
+                  <!-- Telephone Number -->
+                  <div class="mb-4">
+                    <label for="telephone" class="form-label">Provide your telephone number</label>
+                    <input type="tel" class="form-control" id="telephone">
+                  </div>
+
+                  <!-- Telephone Usage -->
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">Where do you use this telephone number? *</label>
+                    <small class="d-block text-muted mb-2">You can select more than one option</small>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="useInUK" name="telephoneUse">
+                      <label class="form-check-label" for="useInUK">For use whilst in the UK</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="useOutUK" name="telephoneUse">
+                      <label class="form-check-label" for="useOutUK">For use whilst out of the UK</label>
+                    </div>
+                  </div>
+
+                  <!-- Telephone Type -->
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">Select whether this is your home, mobile or work telephone number
+                      *</label>
+                    <small class="d-block text-muted mb-2">You can select more than one option</small>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="homePhone" name="phoneType">
+                      <label class="form-check-label" for="homePhone">Home telephone number</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="businessPhone" name="phoneType">
+                      <label class="form-check-label" for="businessPhone">Business telephone number</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="mobilePhone" name="phoneType">
+                      <label class="form-check-label" for="mobilePhone">Mobile telephone number</label>
+                    </div>
+                  </div>
+
+                  <!-- Contact Preference -->
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">Are you able to be contacted by telephone? *</label>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactPreference" id="contactBoth" required>
+                      <label class="form-check-label" for="contactBoth">I can be contacted by telephone call and text
+                        message (SMS)</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactPreference" id="contactCall">
+                      <label class="form-check-label" for="contactCall">I can only be contacted by telephone call</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactPreference" id="contactSMS">
+                      <label class="form-check-label" for="contactSMS">I can only be contacted by text message (SMS)</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactPreference" id="contactNone">
+                      <label class="form-check-label" for="contactNone">I cannot be contacted by telephone call or text
+                        message (SMS)</label>
+                    </div>
+                  </div>
+
+                  <!-- Name -->
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="givenName" class="form-label">Given name(s):</label>
+                      <input type="text" class="form-control" id="givenName">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="familyName" class="form-label">Family name:</label>
+                      <input type="text" class="form-control" id="familyName">
+                    </div>
+                  </div>
+
+                  <!-- Sex -->
+                  <div class="mb-4">
+                    <label class="form-label">What is your sex, as shown in your passport or travels document?</label>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sex" id="male">
+                      <label class="form-check-label" for="male">Male</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sex" id="female">
+                      <label class="form-check-label" for="female">Female</label>
+                    </div>
+                  </div>
+
+                  <!-- Relationship Status -->
+                  <div class="mb-4">
+                    <label for="relationshipStatus" class="form-label">What is your relationship status?</label>
+                    <select class="form-select" id="relationshipStatus">
+                      <option selected disabled value="">Please select</option>
+                      <option>Single</option>
+                      <option>Married</option>
+                      <option>Civil partnership</option>
+                      <option>Divorced</option>
+                      <option>Separated</option>
+                      <option>Widowed</option>
+                    </select>
+                  </div>
+
+                  <h4 class="mt-5 mb-4">Address</h4>
+
+                  <!-- Current Address -->
+                  <div class="mb-4">
+                    <label for="currentAddress" class="form-label">Address</label>
+                    <textarea class="form-control" id="currentAddress" rows="3"></textarea>
+                  </div>
+
+                  <!-- Correspondence Address -->
+                  <div class="mb-4">
+                    <label class="form-label">Is this address also your correspondence address?</label>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="correspondenceAddress" id="sameAddress">
+                      <label class="form-check-label" for="sameAddress">Yes</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="correspondenceAddress" id="differentAddress">
+                      <label class="form-check-label" for="differentAddress">No</label>
+                    </div>
+                  </div>
+
+                  <!-- Duration at Address -->
+                  <div class="mb-4">
+                    <label for="addressDuration" class="form-label">How long have you lived at this address?</label>
+                    <select class="form-select" id="addressDuration">
+                      <option selected disabled value="">Please select</option>
+                      <option>Less than 6 months</option>
+                      <option>6-12 months</option>
+                      <option>1-2 years</option>
+                      <option>2-5 years</option>
+                      <option>More than 5 years</option>
+                    </select>
+                  </div>
+
+                  <!-- Previous Address -->
+                  <div class="mb-4">
+                    <label for="previousAddress" class="form-label">If below one year, provide address of your former
+                      residence.</label>
+                    <textarea class="form-control" id="previousAddress" rows="3"></textarea>
+                  </div>
+
+                  <!-- Ownership Status -->
+                  <div class="mb-4">
+                    <label for="ownershipStatus" class="form-label">What is the ownership status of your home?</label>
+                    <select class="form-select" id="ownershipStatus">
+                      <option selected disabled value="">Please select</option>
+                      <option>Own outright</option>
+                      <option>Own with mortgage or loan</option>
+                      <option>Rent</option>
+                      <option>Live rent free</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <h4 class="mt-5 mb-4">Passport Details</h4>
+
+                  <!-- Passport Number -->
+                  <div class="mb-4">
+                    <label for="passportNumber" class="form-label">Passport number or travels document reference
+                      number</label>
+                    <input type="text" class="form-control" id="passportNumber">
+                  </div>
+
+                  <!-- Issuing Authority -->
+                  <div class="mb-4">
+                    <label for="issuingAuthority" class="form-label">Issuing authority</label>
+                    <input type="text" class="form-control" id="issuingAuthority">
+                  </div>
+
+                  <!-- Issue and Expiry Dates -->
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="issueDate" class="form-label">Issue date</label>
+                      <input type="date" class="form-control" id="issueDate">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="expiryDate" class="form-label">Expiry date</label>
+                      <input type="date" class="form-control" id="expiryDate">
+                    </div>
+                  </div>
+
+                  <!-- Additional sections would continue here... -->
+
+                  <!-- Submit Button -->
+                  <div class="mt-5">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF COMPREHENSIVE UK VISA FORM -->
+
+        <!-- Payment Information Section -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="card shadow-lg border-0">
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Start Your Visa Process Now</h3>
+                <p class="lead">If your questions are all answered, proceed with your application.</p>
+
+                <hr>
+
+                <h5 class="fw-bold text-danger">You are required to pay the processing fee first</h5>
+                <div class="mt-3">
+                  <p class="fs-5"><strong>N499,000</strong> (Adult)</p>
+                  <p class="fs-5"><strong>N299,000</strong> (Child)</p>
+                </div>
+
+                <p class="text-muted">The visa fee can be paid when submitting the application.</p>
+                <p class="text-success fw-bold">We will confirm the payment within 24 hours and get back to you.</p>
+
+                <div class="alert alert-info mt-4" role="alert">
+                  <h5 class="mb-1">Payment Details:</h5>
+                  <p class="mb-0"><strong>Account Number:</strong> 0899984222</p>
+                  <p class="mb-0"><strong>Bank:</strong> Guaranty Trust Bank</p>
+                  <p class="mb-0"><strong>Account Name:</strong> The Diplomats and Eminence Limited</p>
+                </div>
+
+                <p class="fw-bold mt-3">Or</p>
+
+                <div class="bg-light p-3 rounded">
+                  <h5 class="text-primary">Make payment with PAYSTACK</h5>
+                  <p class="text-muted mb-0">Your payment will be automatically verified and redirected to fill the data form.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form - Moved to third position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-lg">
               <div class="card-body">
                 <h3 class="card-title text-center mb-3">Contact Us</h3>
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form action="forms/contact.php" method="post" class="php-email-form" id="contactForm">
                   <div class="row gy-3">
                     <div class="col-md-12">
                       <label for="name" class="form-label">Your Name</label>
-                      <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
-                        required>
+                      <input type="text" id="name" name="name" class="form-control"
+                        placeholder="Enter your name" required>
                     </div>
 
                     <div class="col-md-12">
                       <label for="email" class="form-label">Your Email</label>
-                      <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
-                        required>
+                      <input type="email" id="email" name="email" class="form-control"
+                        placeholder="Enter your email" required>
                     </div>
 
                     <div class="col-md-12">
                       <label for="subject" class="form-label">Subject</label>
-                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject"
-                        required>
+                      <input type="text" id="subject" name="subject" class="form-control"
+                        placeholder="Enter subject" required>
                     </div>
 
                     <div class="col-md-12">
@@ -571,41 +868,15 @@
                     </div>
                   </div>
                 </form>
+
+                <!-- Add this div for displaying form submission messages -->
+                <div id="form-message" class="mt-3 text-center"></div>
               </div>
             </div>
           </div>
-          
-          <div class="card shadow-lg border-0">
-            <div class="card-body text-center">
-                <h3 class="text-primary fw-bold">Start Your Visa Process Now</h3>
-                <p class="lead">If your questions are all answered, proceed with your application.</p>
-    
-                <hr>
-    
-                <h5 class="fw-bold text-danger">You are required to pay the processing fee first</h5>
-                <div class="mt-3">
-                    <p class="fs-5"><strong>N499,000</strong> (Adult)</p>
-                    <p class="fs-5"><strong>N299,000</strong> (Child)</p>
-                </div>
-    
-                <p class="text-muted">The visa fee can be paid when submitting the application.</p>
-                <p class="text-success fw-bold">We will confirm the payment within 24 hours and get back to you.</p>
-    
-                <div class="alert alert-info mt-4" role="alert">
-                    <h5 class="mb-1">Payment Details:</h5>
-                    <p class="mb-0"><strong>Account Number:</strong> 0899984222</p>
-                    <p class="mb-0"><strong>Bank:</strong> Guaranty Trust Bank</p>
-                    <p class="mb-0"><strong>Account Name:</strong> The Diplomats and Eminence Limited</p>
-                </div>
-    
-                <p class="fw-bold mt-3">Or</p>
-    
-                <div class="bg-light p-3 rounded">
-                    <h5 class="text-primary">Make payment with PAYSTACK</h5>
-                    <p class="text-muted mb-0">Your payment will be automatically verified and redirected to fill the data form.</p>
-                </div>
-            </div>
         </div>
+
+      </div>
     </section>
     <!-- End Service Details Section -->
   </main>
@@ -623,7 +894,7 @@
             <p>3rd Gate Army Barrack, by Ebube Block Industry,</p>
             <p>Azhata, Abuja FCT</p>
             <p class="mt-3"><strong>Whatsapp:</strong> <span>+23470 8184 3000</span></p>
-            <p><strong>Email:</strong> <span>talktothediplomats@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>info@talktothediplomats.com.ng</span></p>
           </div>
         </div>
 
@@ -640,18 +911,18 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="./VP.html"></a>Visa Processing</li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./VP.html">Visa Processing</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="./CF.html">College Finding</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Flight Reservation</li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Hotel Reservation</li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Vacation Package</li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Flight Reservation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Hotel Reservation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Vacation Package</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
           <p>Your journey starts here! We specialize in unforgettable travels experiences, from dream getaways to thrilling adventures. Follow us for inspiration, 
-            tips, and exclusive deals. Let’s explore the world together!</p>
+            tips, and exclusive deals. Let's explore the world together!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -666,10 +937,6 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">The Diplomats and Eminence Limited</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">Somto</a>
       </div>
     </div>
@@ -687,5 +954,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

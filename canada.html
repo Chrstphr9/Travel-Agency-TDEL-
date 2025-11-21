@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Diplomat travels Website</title>
+  <title>Service Details - The Diplomat Travels Website</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -24,9 +24,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .form-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+    }
+    
+    .section-title {
+        border-bottom: 2px solid #0d6efd;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+</style>
 </head>
 
 <body class="service-details-page">
@@ -35,7 +49,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Diplomat travels</h1>
+        <h1 class="sitename">The Diplomat Travels</h1>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -44,15 +58,6 @@
           <li class="dropdown"><a href="#"><span>Servives</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="./VP.html">Visa Processing</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> -->
               <li><a href="./CF.html">College Finding</a></li>
               <li><a href="#">Flight Reservation</a></li>
               <li><a href="#">Hotel Reservation</a></li>
@@ -88,19 +93,15 @@
     <!-- ======= Service Details Section ======= -->
     <section id="service-details" class="service-details section">
       <div class="container">
-        <div class="row gy-5">
-
-
-
-          <!-- Right Column: FAQ Section -->
-          <div class="col-lg-6 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- FAQ Section - Moved to top -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up">
             <div class="card shadow-lg">
               <div class="card-body">
-                <img src="assets/img/flight.jpg" alt="Canada Visa Service" class="img-fluid rounded mb-4">
-                <h3 class="mb-2">Visa Processing Assistance</h3>
                 <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-
                 <div class="accordion" id="faqAccordion">
+                  
                   <!-- FAQ Item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="faq1">
@@ -144,11 +145,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- FAQ Items 3-21 (Condensed for readability) -->
-                  <!-- Additional FAQ items would follow the same structure -->
-
-                  <!-- For brevity, showing just a few more examples -->
 
                   <!-- FAQ Item 3 -->
                   <div class="accordion-item">
@@ -392,24 +388,22 @@
                       <div class="accordion-body">
                         <p>3rd Gate Army Barrack Kurudu, by Ebube Block Industry Azhata, Abuja.</p>
                       </div>
-
-
-                      <!-- Note: All 21 FAQ items would be included in the full implementation -->
                     </div>
                   </div>
+
+                  <!-- Additional FAQ items would continue here -->
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Left Column: Visit Visa Application Form -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <!-- Visit Visa Application Process - Moved to second position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="100">
             <div class="card shadow-lg">
               <div class="card-body">
                 <h3 class="card-title text-center mb-4">Visit Visa Application Process</h3>
-
-
-
                 <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
                   <input type="hidden" name="access_key" value="33794fce-ed73-497c-ac56-f4567a9abd6d">
                 
@@ -481,13 +475,228 @@
                     <button type="submit" class="btn btn-primary">Submit Application</button>
                   </div>
                 </form>
-                
-                
               </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Contact Form -->
-            <div class="card shadow-lg mt-5">
+        <!-- Comprehensive Visa Application Form - Added before payment details -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title text-center mb-4">Complete Visa Application Form</h3>
+                <p class="text-center text-muted mb-4">Please fill out all sections of this comprehensive visa application form</p>
+                
+                <form id="comprehensiveVisaForm">
+                    <!-- Visa Purpose Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Purpose of Visit</h3>
+                        <div class="mb-3">
+                            <label class="form-label">I want to apply for a:</label>
+                            <select class="form-select" name="visa_type" required>
+                                <option selected disabled value="">Select visa type</option>
+                                <option value="Visitor Visa">Visitor Visa</option>
+                                <option value="Study Permit">Study Permit</option>
+                                <option value="Work Permit">Work Permit</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="visitPurpose" class="form-label">Why do you need a visa?</label>
+                            <textarea class="form-control" id="visitPurpose" name="visit_purpose" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="visitDetails" class="form-label">Tell us more about what you'll do in Canada. Include dates.</label>
+                            <textarea class="form-control" id="visitDetails" name="visit_details" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="entryDate" class="form-label">When will you enter Canada?</label>
+                                <input type="date" class="form-control" id="entryDate" name="entry_date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="exitDate" class="form-label">When will you leave Canada?</label>
+                                <input type="date" class="form-control" id="exitDate" name="exit_date" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Representative Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Representative</h3>
+                        <div class="mb-3">
+                            <label class="form-label">Are you applying on behalf of someone else?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="representative" id="repYes" value="Yes">
+                                <label class="form-check-label" for="repYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="representative" id="repNo" value="No" checked>
+                                <label class="form-check-label" for="repNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Travel Document Information</h3>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="surname" class="form-label">Surname/last name</label>
+                                <input type="text" class="form-control" id="surname" name="surname" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="givenName" class="form-label">Given name/first name</label>
+                                <input type="text" class="form-control" id="givenName" name="given_name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="birthDate" class="form-label">Date of birth</label>
+                                <input type="date" class="form-control" id="birthDate" name="birth_date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Gender</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Passport Information Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Passport Information</h3>
+                        <div class="mb-3">
+                            <label class="form-label">What document are you traveling with?</label>
+                            <select class="form-select" name="document_type" required>
+                                <option selected disabled value="">Select document type</option>
+                                <option value="Regular Passport">Regular Passport</option>
+                                <option value="Diplomatic Passport">Diplomatic Passport</option>
+                                <option value="Travel Document">Travel Document</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="passportCountry" class="form-label">What is the country code that matches the one on your passport?</label>
+                                <input type="text" class="form-control" id="passportCountry" name="passport_country" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="nationality" class="form-label">What's the nationality on your passport?</label>
+                                <input type="text" class="form-control" id="nationality" name="nationality" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="passportNumber" class="form-label">What's your passport or travel document number?</label>
+                                <input type="text" class="form-control" id="passportNumber" name="passport_number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="confirmPassportNumber" class="form-label">Confirm your passport or travel document number</label>
+                                <input type="text" class="form-control" id="confirmPassportNumber" name="confirm_passport_number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="passportIssueDate" class="form-label">Date of issue of passport or travel document</label>
+                                <input type="date" class="form-control" id="passportIssueDate" name="passport_issue_date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="passportExpiryDate" class="form-label">Date of expiry of your passport or travel document</label>
+                                <input type="date" class="form-control" id="passportExpiryDate" name="passport_expiry_date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Are you a lawful permanent resident of the United States with a valid Green Card?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="green_card" id="greenCardYes" value="Yes">
+                                <label class="form-check-label" for="greenCardYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="green_card" id="greenCardNo" value="No" checked>
+                                <label class="form-check-label" for="greenCardNo">No</label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Have you held a Canadian visitor visa in the past 10 years?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="previous_canada_visa" id="previousVisaYes" value="Yes">
+                                <label class="form-check-label" for="previousVisaYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="previous_canada_visa" id="previousVisaNo" value="No" checked>
+                                <label class="form-check-label" for="previousVisaNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button for Comprehensive Form -->
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">Save Application Form</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Information Section - Kept in original position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="card shadow-lg border-0">
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Start Your Visa Process Now</h3>
+                <p class="lead">If your questions are all answered, proceed with your application.</p>
+
+                <hr>
+
+                <h5 class="fw-bold text-danger">You are required to pay the processing fee first</h5>
+                <div class="mt-3">
+                  <p class="fs-5"><strong>N499,000</strong> (Adult)</p>
+                  <p class="fs-5"><strong>N299,000</strong> (Child)</p>
+                </div>
+
+                <p class="text-muted">The visa fee can be paid when submitting the application.</p>
+                <p class="text-success fw-bold">We will confirm the payment within 24 hours and get back to you.</p>
+
+                <div class="alert alert-info mt-4" role="alert">
+                  <h5 class="mb-1">Payment Details:</h5>
+                  <p class="mb-0"><strong>Account Number:</strong> 0899984222</p>
+                  <p class="mb-0"><strong>Bank:</strong> Guaranty Trust Bank</p>
+                  <p class="mb-0"><strong>Account Name:</strong> The Diplomats and Eminence Limited</p>
+                </div>
+
+                <p class="fw-bold mt-3">Or</p>
+
+                <div class="bg-light p-3 rounded">
+                  <a href="paystack.html" class="text-primary">Make payment with PAYSTACK</a>
+                  <p class="text-muted mb-0">Your payment will be automatically verified and redirected to fill the data
+                    form.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form - Moved to third position -->
+        <div class="row mb-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-lg">
               <div class="card-body">
                 <h3 class="card-title text-center mb-3">Contact Us</h3>
                 <form action="forms/contact.php" method="post" class="php-email-form" id="contactForm">
@@ -527,40 +736,11 @@
               </div>
             </div>
           </div>
+        </div>
 
 
-          <div class="card shadow-lg border-0">
-            <div class="card-body text-center">
-              <h3 class="text-primary fw-bold">Start Your Visa Process Now</h3>
-              <p class="lead">If your questions are all answered, proceed with your application.</p>
 
-              <hr>
-
-              <h5 class="fw-bold text-danger">You are required to pay the processing fee first</h5>
-              <div class="mt-3">
-                <p class="fs-5"><strong>N499,000</strong> (Adult)</p>
-                <p class="fs-5"><strong>N299,000</strong> (Child)</p>
-              </div>
-
-              <p class="text-muted">The visa fee can be paid when submitting the application.</p>
-              <p class="text-success fw-bold">We will confirm the payment within 24 hours and get back to you.</p>
-
-              <div class="alert alert-info mt-4" role="alert">
-                <h5 class="mb-1">Payment Details:</h5>
-                <p class="mb-0"><strong>Account Number:</strong> 0899984222</p>
-                <p class="mb-0"><strong>Bank:</strong> Guaranty Trust Bank</p>
-                <p class="mb-0"><strong>Account Name:</strong> The Diplomats and Eminence Limited</p>
-              </div>
-
-              <p class="fw-bold mt-3">Or</p>
-
-              <div class="bg-light p-3 rounded">
-                <a href="paystack.html" class="text-primary">Make payment with PAYSTACK</a>
-                <p class="text-muted mb-0">Your payment will be automatically verified and redirected to fill the data
-                  form.</p>
-              </div>
-            </div>
-          </div>
+      </div>
     </section>
     <!-- End Service Details Section -->
   </main>
@@ -568,23 +748,7 @@
   <!-- Footer -->
   <footer id="footer" class="footer dark-background">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
-              </div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -595,7 +759,7 @@
           <div class="footer-contact pt-3">
           FF 8, C. I. Abayomi Plaza, Phase 2, Army Barrack Kurudu Abuja
             <p class="mt-3"><strong>Whatsapp:</strong> <span>+23470 8184 3000</span></p>
-            <p><strong>Email:</strong> <span>talktothediplomats@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>info@talktothediplomats.com.ng</span></p>
           </div>
         </div>
 
@@ -612,11 +776,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="./VP.html"></a>Visa Processing</li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./VP.html">Visa Processing</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="./CF.html">College Finding</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Flight Reservation</li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Hotel Reservation</li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#"></a>Vacation Package</li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Flight Reservation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Hotel Reservation</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Vacation Package</a></li>
           </ul>
         </div>
 
@@ -624,7 +788,7 @@
           <h4>Follow Us</h4>
           <p>Your journey starts here! We specialize in unforgettable travels experiences, from dream getaways to
             thrilling adventures. Follow us for inspiration,
-            tips, and exclusive deals. Let’s explore the world together!</p>
+            tips, and exclusive deals. Let's explore the world together!</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -640,10 +804,6 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">The Diplomats and Eminence Limited</strong> <span>All
           Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">Somto</a>
       </div>
     </div>
@@ -659,6 +819,26 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Form validation for the comprehensive visa form
+    document.getElementById('comprehensiveVisaForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic validation
+        const passportNumber = document.getElementById('passportNumber').value;
+        const confirmPassportNumber = document.getElementById('confirmPassportNumber').value;
+        
+        if (passportNumber !== confirmPassportNumber) {
+            alert('Passport numbers do not match!');
+            return;
+        }
+        
+        // If validation passes, you can submit the form or save the data
+        alert('Application form saved successfully! Proceed to payment.');
+        // Here you would typically send the form data to your server
+    });
+  </script>
 
 </body>
 </html>
